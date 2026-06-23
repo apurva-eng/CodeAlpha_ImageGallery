@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>My Image Gallery</h1><hr>
+
+<div class="buttons">
+
+<button onclick="filterImages('all')">
+All
+</button>
+
+<button onclick="filterImages('nature')">
+Nature
+</button>
+
+<button onclick="filterImages('quotes')">
+City
+</button>
+
+<button onclick="filterImages('wildlife')">
+Animal
+</button>
+
+</div>
+
+
+<div class="gallery">
+
+
+<img src="images/nature.jpg"
+class="nature"
+onclick="openLightbox(this.src)">
+
+
+<img src="images/nature2.jpg"
+class="nature"
+onclick="openLightbox(this.src)">
+
+
+<img src="images/image1.jpg"
+class="motivation"
+onclick="openLightbox(this.src)">
+
+
+<img src="images/wildlife.jpg"
+class="animal"
+onclick="openLightbox(this.src)">
+
+
+</div>
+
+
+<div id="lightbox">
+
+<span onclick="closeLightbox()">
+×
+</span>
+
+<img id="lightbox-img">
+
+
+<button onclick="previousImage()">
+Previous
+</button>
+
+<button onclick="nextImage()">
+Next
+</button>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
